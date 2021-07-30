@@ -1,0 +1,25 @@
+:root {
+  --tab-border-radius: 0 !important;
+  --tab-block-margin: 0 !important;
+  --tabs-border-color: transparent;
+}
+
+:root[uidensity="compact"] {
+  --tab-min-height: 33px !important;
+}
+
+tab[visuallyselected="true"] .tab-content {
+  border-block-start: 2px solid var(--panel-banner-item-info-icon-bgcolor);
+}
+
+tab[visuallyselected="true"] .tab-content > * {
+  transform: translateY(-1px);
+}
+
+.tabbrowser-tab {
+  padding-inline: 0 !important;
+}
+
+tab[pinned="true"] {
+  width: var(--tab-min-height);
+}
